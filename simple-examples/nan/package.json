@@ -1,0 +1,13 @@
+{
+  "name": "nan-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "nan": "^2.23.0"
+  }
+}

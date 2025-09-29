@@ -1,0 +1,12 @@
+{
+  "name": "matrix-rust",
+  "version": "1.0.0",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {},
+  "dependencies": {},
+  "napi": {
+    "binaryName": "matrix-rust"
+  }
+}

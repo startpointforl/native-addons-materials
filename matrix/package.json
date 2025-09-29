@@ -1,0 +1,31 @@
+{
+  "name": "matrix",
+  "version": "1.0.0",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server-benchmark/index.js",
+  "scripts": {
+    "build:wasm": "cd wasm && ./compile.sh",
+    "build:cpp": "node-gyp rebuild",
+    "build:rust": "cd rust-addons && napi build --platform --release",
+    "start": "UV_THREADPOOL_SIZE=8 node --expose-gc server.js",
+    "start:mac-cpp:veclib": "VECLIB_MAXIMUM_THREADS=8 node --expose-gc server.js",
+    "start:mac-cpp:threadpool": "VECLIB_MAXIMUM_THREADS=1 UV_THREADPOOL_SIZE=8 node --expose-gc server.js",
+    "bm:server": "node benchmarks/server",
+    "bm:server:help": "node benchmarks/server --help",
+    "bm:server:ls": "node benchmarks/server --endpoints",
+    "bm:isolated": "node --expose-gc benchmarks/isolated",
+    "bm:isolated:help": "node benchmarks/isolated --help",
+    "bm:isolated:ls": "node benchmarks/isolated --functions",
+    "test": "node tests"
+  },
+  "dependencies": {
+    "@napi-rs/cli": "^3.0.4",
+    "autocannon": "^8.0.0",
+    "axios": "^1.11.0",
+    "bindings": "^1.5.0",
+    "node-addon-api": "^8.5.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

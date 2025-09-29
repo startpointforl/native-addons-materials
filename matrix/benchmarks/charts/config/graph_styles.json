@@ -1,0 +1,61 @@
+{
+  "theme": {
+    "style": "dark_background",
+    "background_color": "#2E2E2E",
+    "grid_color": "#444444",
+    "text_color": "#FFFFFF",
+    "axis_color": "#CCCCCC"
+  },
+  "figure": {
+    "size": [12, 8],
+    "dpi": 300,
+    "tight_layout": true
+  },
+  "lines": {
+    "width": 2.5,
+    "marker_size": 8,
+    "marker_edge_width": 1.5,
+    "alpha": 0.8,
+    "smoothing": false
+  },
+  "error_bars": {
+    "width": 2.0,
+    "cap_size": 4,
+    "alpha": 0.7,
+    "style": "bars"
+  },
+  "axes": {
+    "title_font_size": 16,
+    "label_font_size": 14,
+    "tick_font_size": 12,
+    "grid": true,
+    "grid_alpha": 0.3
+  },
+  "legend": {
+    "font_size": 12,
+    "location": "best",
+    "frameon": true,
+    "fancybox": true,
+    "shadow": true,
+    "framealpha": 0.9
+  },
+  "scales": {
+    "rps_log_scale": true,
+    "performance_log_scale": false
+  },
+  "export": {
+    "formats": ["png"],
+    "png_dpi": 300,
+    "svg_transparent": true
+  },
+  "column_filters": {
+    "server_benchmark": {
+      "include_patterns": ["avg_*", "min_*", "max_*"],
+      "matrix_size_column": "matrix_size"
+    },
+    "isolated_benchmark": {
+      "include_patterns": ["avg_*", "min_*", "max_*"],
+      "matrix_size_column": "matrix_size" 
+    }
+  }
+} 

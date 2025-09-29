@@ -1,0 +1,82 @@
+{
+  "colors": {
+    "js_base": "#FFD700",
+    "js_non_blocking": "#FFFFFF",
+    "js_optimized": "#ADFF2F",
+    "js_worker": "#FFFFFE",
+    "js_optimized_worker": "#9370DB",
+
+    "cpp_base": "#1E90FF",
+    "cpp_async": "#FFFFFF",
+    "cpp_simd": "#DC143C",
+    "cpp_simd_async": "#00FA9A",
+    "cpp_accelerate": "#FF6B35",
+    "cpp_accelerate_async": "#FFFFFF",
+
+    "wasm_base": "#FFFFFF",
+    "wasm_simd": "#32CD32",
+    "wasm_worker": "#FFFFFF",
+    "wasm_simd_worker": "#32CD32",
+
+    "rust_base": "#FFFFFF",
+    "rust_async": "#FFFFFF",
+    "rust_simd": "#FF69B4",
+    "rust_simd_async": "#FF69B4",
+    "rust_accelerate": "#8A2BE2",
+    "rust_accelerate_async": "#FFFFFF"
+  },
+
+  "line_styles": {
+    "js_base": "-",
+    "js_non_blocking": "-",
+    "js_optimized": "-",
+    "js_worker": "-",
+    "js_optimized_worker": "-",
+
+    "cpp_base": "-",
+    "cpp_async": "-",
+    "cpp_simd": "-",
+    "cpp_simd_async": "-",
+    "cpp_accelerate": "-",
+    "cpp_accelerate_async": "-",
+
+    "wasm_base": "-",
+    "wasm_simd": "-",
+    "wasm_worker": "-",
+    "wasm_simd_worker": "-",
+
+    "rust_base": "-",
+    "rust_async": "-",
+    "rust_simd": "-",
+    "rust_simd_async": "-",
+    "rust_accelerate": "-",
+    "rust_accelerate_async": "-"
+  },
+
+  "markers": {
+    "js_base": "o",
+    "js_non_blocking": "^",
+    "js_optimized": "o",
+    "js_worker": "^",
+    "js_optimized_worker": "^",
+
+    "cpp_base": "o",
+    "cpp_async": "^",
+    "cpp_simd": "o",
+    "cpp_simd_async": "^",
+    "cpp_accelerate": "o",
+    "cpp_accelerate_async": "^",
+
+    "wasm_base": "o",
+    "wasm_worker": "^",
+    "wasm_simd": "o",
+    "wasm_simd_worker": "^",
+
+    "rust_base": "o",
+    "rust_async": "^",
+    "rust_simd": "o",
+    "rust_simd_async": "^",
+    "rust_accelerate": "o",
+    "rust_accelerate_async": "^"
+  }
+}

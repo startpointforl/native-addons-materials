@@ -1,0 +1,30 @@
+[package]
+name = "matrix-rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+napi = { version = "2.16.0", default-features = false, features = ["napi8", "tokio_rt"] }
+napi-derive = "2.16.0"
+tokio = { version = "1.0", features = ["rt-multi-thread"] }
+
+# SIMD support
+wide = "0.7"
+
+# Accelerate framework support for macOS
+[target.'cfg(target_os = "macos")'.dependencies]
+blas = "0.22"
+accelerate-src = "0.3"
+
+[build-dependencies]
+napi-build = "2.1.0"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+strip = "symbols"
+debug = false

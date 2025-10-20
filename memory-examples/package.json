@@ -1,0 +1,19 @@
+{
+  "name": "memory-examples",
+  "version": "1.0.0",
+  "description": "Memory examples for native addons",
+  "main": "demo.js",
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "demo:simple": "node --expose-gc demo/simple.js",
+    "demo:leak": "node --expose-gc demo/leak.js",
+    "demo:array": "node --expose-gc demo/array.js",
+    "demo:buffer": "node --expose-gc demo/buffer.js",
+    "demo:ext-buffer": "node --expose-gc demo/ext-buffer.js",
+    "demo:gc": "node --expose-gc demo/gc.js"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.0.0"
+  }
+}
+

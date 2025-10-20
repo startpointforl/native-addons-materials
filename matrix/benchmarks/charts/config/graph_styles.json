@@ -26,13 +26,13 @@
   },
   "axes": {
     "title_font_size": 16,
-    "label_font_size": 14,
+    "label_font_size": 16,
     "tick_font_size": 12,
     "grid": true,
     "grid_alpha": 0.3
   },
   "legend": {
-    "font_size": 12,
+    "font_size": 16,
     "location": "best",
     "frameon": true,
     "fancybox": true,
@@ -55,7 +55,7 @@
     },
     "isolated_benchmark": {
       "include_patterns": ["avg_*", "min_*", "max_*"],
-      "matrix_size_column": "matrix_size" 
+      "matrix_size_column": "matrix_size"
     }
   }
-} 
+}
